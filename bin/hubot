@@ -1,0 +1,8 @@
+#!/bin/sh
+
+set -e
+
+export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
+root=$(cd "$(dirname "$1")" && pwd)/$(basename "$1")
+export NODE_PATH=${root}src
+exec ${root}node_modules/.bin/hubot --adapter "webscale" --name "大白" --alias "/"
