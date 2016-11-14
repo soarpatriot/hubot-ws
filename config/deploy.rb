@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 set :application, 'hubot-dabai'
-set :repo_url, 'git@git.rfdoa.cn:java/hubot-dabai.g'
+set :repo_url, 'git@git.rfdoa.cn:java/hubot-dabai.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
@@ -44,12 +44,12 @@ namespace :deploy do
   task :start  do
     on roles(:web)  do
       within current_path do
-        unless test("[ -f `ps -ef | grep syncapp 'awk {print $2}'` ]")
+        #unless test("[ -f `ps -ef | grep syncapp 'awk {print $2}'` ]")
           info ">>>>> start"
-          execute "./bin/hubot"
-        else 
-          error ">>>>>> already started"
-        end 
+          execute "./bin/test-hubot"
+        # else 
+        #  error ">>>>>> already started"
+        # end 
 
       end
     end
@@ -65,5 +65,14 @@ namespace :deploy do
       end
     end
   end
-
+  task :dep do 
+    on roles(:web)  do
+      within current_path do
+        execute "npm install"
+      end
+    end
+ 
+  end
 end
+after "deploy:publishing", "deploy:dep"
+after "deploy:publishing", "deploy:restart"

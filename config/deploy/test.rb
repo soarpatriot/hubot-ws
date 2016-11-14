@@ -13,7 +13,7 @@ set :branch, "master"
 set :app_pid, "#{shared_path}/tmp/pids/appliction.pid"
 
 set :default_environment, { 
-  'NODE_ENV' => 'test'
+  "REDIS_URL" => "redis%3A%2F%2Fhaysh%25j37j%4010.3.47.62%3A6379"
 }
 server fetch(:server_name), user: 'deploy', roles: %w{web app}
 

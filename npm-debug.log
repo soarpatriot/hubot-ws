@@ -12,35 +12,36 @@
 9 verbose lifecycle hubot-webscale@0.0.1~start: PATH: /Users/liuhaibao/.nvm/versions/v4.4.5/lib/node_modules/npm/bin/node-gyp-bin:/Users/liuhaibao/test/hubot-webscale/node_modules/.bin:/Users/liuhaibao/.rvm/gems/ruby-2.1.5@hubot-dabai/bin:/Users/liuhaibao/.rvm/gems/ruby-2.1.5@global/bin:/Users/liuhaibao/.rvm/rubies/ruby-2.1.5/bin:/Users/liuhaibao/.rvm/bin:/Users/liuhaibao/.gvm/bin:/Users/liuhaibao/.nvm/versions/v4.4.5/bin:/Users/liuhaibao/.sdkman/springboot/current/bin:/Users/liuhaibao/.sdkman/gradle/current/bin:/Users/liuhaibao/.gvm/bin:/Users/liuhaibao/.nvm/versions/v4.4.5/bin:/Users/liuhaibao/.gvm/bin:/Users/liuhaibao/.nvm/versions/v0.12.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin:/Users/liuhaibao/soft/apache-maven-3.3.9/bin:/Users/liuhaibao/.rvm:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/bin:/Users/liuhaibao/soft/apache-maven-3.3.9/bin
 10 verbose lifecycle hubot-webscale@0.0.1~start: CWD: /Users/liuhaibao/test/hubot-webscale
 11 silly lifecycle hubot-webscale@0.0.1~start: Args: [ '-c', 'bin/hubot' ]
-12 info lifecycle hubot-webscale@0.0.1~start: Failed to exec start script
-13 verbose stack Error: hubot-webscale@0.0.1 start: `bin/hubot`
-13 verbose stack spawn ENOENT
-13 verbose stack     at ChildProcess.<anonymous> (/Users/liuhaibao/.nvm/versions/v4.4.5/lib/node_modules/npm/lib/utils/spawn.js:33:16)
-13 verbose stack     at emitTwo (events.js:87:13)
-13 verbose stack     at ChildProcess.emit (events.js:172:7)
-13 verbose stack     at maybeClose (internal/child_process.js:827:16)
-13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-14 verbose pkgid hubot-webscale@0.0.1
-15 verbose cwd /Users/liuhaibao/test/hubot-webscale
-16 error Darwin 16.1.0
-17 error argv "/Users/liuhaibao/.nvm/versions/v4.4.5/bin/node" "/Users/liuhaibao/.nvm/versions/v4.4.5/bin/npm" "start"
-18 error node v4.4.5
-19 error npm  v4.0.0
-20 error file sh
+12 silly lifecycle hubot-webscale@0.0.1~start: Returned: code: 1  signal: null
+13 info lifecycle hubot-webscale@0.0.1~start: Failed to exec start script
+14 verbose stack Error: hubot-webscale@0.0.1 start: `bin/hubot`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/Users/liuhaibao/.nvm/versions/v4.4.5/lib/node_modules/npm/lib/utils/lifecycle.js:277:16)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at EventEmitter.emit (events.js:172:7)
+14 verbose stack     at ChildProcess.<anonymous> (/Users/liuhaibao/.nvm/versions/v4.4.5/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+14 verbose stack     at emitTwo (events.js:87:13)
+14 verbose stack     at ChildProcess.emit (events.js:172:7)
+14 verbose stack     at maybeClose (internal/child_process.js:827:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid hubot-webscale@0.0.1
+16 verbose cwd /Users/liuhaibao/test/hubot-webscale
+17 error Darwin 16.1.0
+18 error argv "/Users/liuhaibao/.nvm/versions/v4.4.5/bin/node" "/Users/liuhaibao/.nvm/versions/v4.4.5/bin/npm" "start"
+19 error node v4.4.5
+20 error npm  v4.0.0
 21 error code ELIFECYCLE
-22 error errno ENOENT
-23 error syscall spawn
-24 error hubot-webscale@0.0.1 start: `bin/hubot`
-24 error spawn ENOENT
-25 error Failed at the hubot-webscale@0.0.1 start script 'bin/hubot'.
-25 error Make sure you have the latest version of node.js and npm installed.
-25 error If you do, this is most likely a problem with the hubot-webscale package,
-25 error not with npm itself.
-25 error Tell the author that this fails on your system:
-25 error     bin/hubot
-25 error You can get information on how to open an issue for this project with:
-25 error     npm bugs hubot-webscale
-25 error Or if that isn't available, you can get their info via:
-25 error     npm owner ls hubot-webscale
-25 error There is likely additional logging output above.
-26 verbose exit [ 1, true ]
+22 error hubot-webscale@0.0.1 start: `bin/hubot`
+22 error Exit status 1
+23 error Failed at the hubot-webscale@0.0.1 start script 'bin/hubot'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the hubot-webscale package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     bin/hubot
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs hubot-webscale
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls hubot-webscale
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
