@@ -30,7 +30,7 @@
   },
   "main": "hubot",
   "scripts": {
-    "start": "bin/hubot",
+    "start": "bin/hubot"
   },
   "repository": {
     "type": "git",
