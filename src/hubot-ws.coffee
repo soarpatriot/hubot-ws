@@ -5,7 +5,7 @@ coffee = require 'coffee-middleware'
 io = require 'socket.io'
 {TextMessage, EnterMessage, User, Adapter} = require 'hubot'
 
-class Webscale extends Adapter
+class Ws extends Adapter
 
   send: (envelope, strings...) ->
     @robot.logger.info "SENDING: #{strings}"
@@ -49,4 +49,4 @@ class Webscale extends Adapter
     @emit 'connected'
 
 exports.use = (robot) ->
-  new Webscale robot
+  new Ws robot
