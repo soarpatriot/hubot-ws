@@ -2,7 +2,7 @@ fs = require 'fs'
 express = require 'express'
 path = require 'path'
 coffee = require 'coffee-middleware'
-io = require 'socket.io'
+io = require('socket.io')(process.env.DABAI_PORT)
 {TextMessage, EnterMessage, User, Adapter} = require 'hubot'
 
 class Ws extends Adapter
@@ -33,8 +33,9 @@ class Ws extends Adapter
       compress: true
 
     # Init the websocket server
+    @robot.logger.info "SERVER: #{JSON.stringify(@robot.server)}"
     io = io.listen(@robot.server)
-
+    
     io.sockets.on 'connection', (socket) =>
       user = new User "user-#{Date.now()}", room: socket
       @receive new EnterMessage(user)
