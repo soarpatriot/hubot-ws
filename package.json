@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/benbalter/hubot-webscale"
+    "url": "https://github.com/soarpatriot/hubot-ws"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/benbalter/hubot-webscale/issues"
+    "url": "https://github.com/soarpatriot/hubot-ws/issues"
   }
 }

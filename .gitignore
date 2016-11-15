@@ -4,3 +4,5 @@ Gemfile.lock
 .bundle
 Gemfile
 /public/vendor
+
+*.log
