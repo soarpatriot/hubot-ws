@@ -5,6 +5,6 @@ set -e
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 root=$(cd "$(dirname "$1")" && pwd)/$(basename "$1")
 export PORT="11065"
-export REDIS_URL="redis%3A%2F%2Fhaysh%25j37j%4010.3.47.62%3A6379"
+export REDIS_URL="redis://haysh%25j37j@10.3.47.62:6379"
 export NODE_PATH=${root}src
 exec ${root}node_modules/.bin/hubot --adapter "webscale" --name "大白" --alias "/"

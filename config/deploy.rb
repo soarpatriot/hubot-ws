@@ -46,7 +46,7 @@ namespace :deploy do
       within current_path do
         #unless test("[ -f `ps -ef | grep syncapp 'awk {print $2}'` ]")
           info ">>>>> start"
-          execute "./bin/test-hubot"
+          execute "nohup ./bin/test-hubot &"
         # else 
         #  error ">>>>>> already started"
         # end 
