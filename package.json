@@ -1,6 +1,6 @@
 {
   "name": "hubot-ws",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "hubot ws",
   "description": "A simple helpful robot",
   "dependencies": {
@@ -27,7 +27,7 @@
   "engines": {
     "node": "4.4.5"
   },
-  "main": "hubot",
+  "main": "src/hubot-ws",
   "scripts": {
     "start": "bin/hubot"
   },
