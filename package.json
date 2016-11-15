@@ -1,6 +1,6 @@
 {
   "name": "hubot-ws",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "hubot ws",
   "description": "A simple helpful robot",
   "dependencies": {
